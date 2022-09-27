@@ -2,7 +2,8 @@ using Workerd = import "/workerd/workerd.capnp";
 
 const config :Workerd.Config = (
 	services = [
-		(name = "main", worker = .mainWorker)
+		(name = "main", worker = .mainWorker),
+		(name = "kv", disk = ( path = "kv", writable = true, allowDotfiles = false ) )
 	],
 
 	sockets = [
@@ -20,5 +21,8 @@ const mainWorker :Workerd.Worker = (
 
 	modules = [
 		( name = "dist/worker.mjs", esModule = embed "dist/worker.mjs" ),
+	],
+		bindings = [
+		( name = "KV", kvNamespace = ( name = "kv" ) ),
 	],
 );

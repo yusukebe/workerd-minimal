@@ -8,6 +8,7 @@
     "build": "esbuild --bundle --format=esm --outfile=dist/worker.mjs src/index.tsx"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^3.16.0",
     "esbuild": "^0.15.9",
     "workered": "^1.1.0"
   },
