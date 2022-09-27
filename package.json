@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "yarn build && workerd serve config.capnp",
-    "build": "esbuild --bundle --format=esm --outfile=dist/worker.mjs src/index.ts"
+    "serve": "yarn build && workerd serve config.capnp --watch",
+    "build": "esbuild --bundle --format=esm --outfile=dist/worker.mjs src/index.tsx"
   },
   "devDependencies": {
     "esbuild": "^0.15.9",
