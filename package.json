@@ -1,0 +1,17 @@
+{
+  "name": "workerd-minimal",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "yarn build && workerd serve config.capnp",
+    "build": "esbuild --bundle --format=esm --outfile=dist/worker.mjs src/index.ts"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.9",
+    "workered": "^1.1.0"
+  },
+  "dependencies": {
+    "hono": "^2.2.2"
+  }
+}
