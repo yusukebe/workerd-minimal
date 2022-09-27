@@ -16,6 +16,11 @@ Run:
 yarn serve
 ```
 
+## Related projects
+
+* <https://github.com/cloudflare/workerd>
+* <https://github.com/WalshyDev/workerd-example>
+
 
 ## Author
 
