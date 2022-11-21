@@ -13,6 +13,7 @@
     "workered": "^1.1.0"
   },
   "dependencies": {
-    "hono": "^2.2.2"
+    "hono": "^2.2.2",
+    "workerd": "^1.20221111.5"
   }
 }
